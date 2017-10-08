@@ -1,0 +1,75 @@
+
+
+
+.headerB_Wrap{height:66px;width:100%;min-width:1200px;background:#131e2a;}
+.headerB{width:1200px;margin:0 auto;}
+.headerB_Wrap.fixHeader{position:absolute;top:0;left:0;z-index:1000;background:transparent;}
+.headerB_Wrap.fixHeader:before{content:'';background:#131e2a;width:100%;height:0;position:absolute;
+                				top:0;left:0;z-index:-1;opacity:0;transition:height .5s,opacity: .5s;
+                				transition-delay:.1s;}
+.headerB_Wrap.fixHeader:hover:before, .headerB_Wrap.fixHeader.xhover:before{height: 100% ;opacity: 1}
+.headerB_Wrap:after{content:'.';clear:both;display:block;height:0;visibility:hidden}
+.headerB_Wrap .headerB{height:66px}
+
+.headerB .index_logo {background: url(../Pic/newLogo-16042.png) no-repeat left center; height:66px;width:160px;
+	                 overflow:hidden;cursor:pointer;float:left;margin:0;}
+.headerB .index_nav {float:left;position:relative;list-style:none;height:66px;margin-bottom:0;
+                     margin-left:173px;z-index:1020; }
+.headerB .index_nav>li{float:left;height:100%;text-align:center;line-height:66px;position:relative;}
+
+.headerB .index_nav>li>a {font-size:16px;color:#fff;padding:0 20px;background:transparent;
+                          transition: color .1s, background: .1s;transition-delay: .1s;}
+.headerB .index_nav>li:hover>a{color: #fff;background:#1a2531;display:block;}
+
+
+.index_nav>li:hover>.hsolution{display:block;}
+.hsolution>li{color:#fff;font-size:14px;padding:0 20px;list-style:none;height:50px;line-height:50px;
+              text-align:left;cursor:default;float:left;background:rgba(26,37,49,1); }
+
+.hsolution{display:none;left:0;margin:0;padding:0;position:absolute;top:66px;width:160px;}
+.hsolution li{float:none;width:160px;}
+.hsolution li:hover{background-color:#1b2839;}
+.hsolution li:hover a{color:#3293ff;}
+
+.hsolution li:hover span.logo.game{background-position:-843px -387px;}
+.hsolution li:hover span.logo.app{background-position:-843px -438px;}
+.hsolution li a{color:#fff;width:100%;display:inline-block;}
+.hsolution li a.logo{margin-right:5px;}
+
+.headerMask{width:100%;min-height:320px;background-color:#202a36;position:absolute;top:66px;z-index:1000;text-align:center;display:none;transition:height .2s;opacity:.95;min-width:1200px}
+.headerMask .mainNav{width:1200px;margin:0 auto;min-height:320px;padding:0}
+.headerMask .mainNav>li{width:168px;border-right:1px solid #2a3440;color:#fffefe;font-size:14px;text-align:left;padding-left:20px;cursor:pointer;line-height:66px;position:relative;margin-left:330px}
+.headerMask .mainNav>li:first-child{padding-top:20px}
+.headerMask .mainNav>li:last-child{padding-bottom:20px}
+.headerMask .mainNav>li:before{content:'';width:15px;height:20px;background:url() -684px -183px;position:absolute;margin-top:28px;left:135px}
+.headerMask .mainNav>li.active{color:#3293ff}
+.headerMask .mainNav>li.active .toolLogo{background-position:-30px center!important}
+.headerMask .mainNav>li.active:before{background-position:-723px -183px}
+.headerMask .mainNav>li>ol{display:none;padding:30px 10px}
+.headerMask .mainNav>li.active>ol{display:block;float:left;width:720px;position:absolute;margin-left:170px;top:0}
+.headerMask .mainNav>li:nth-child(2)>ol{top:-86px}
+.headerMask .mainNav>li:nth-child(3)>ol{top:-152px}
+.headerMask .mainNav>li:nth-child(4)>ol{top:-218px}
+.headerMask .mainNav>li:nth-child(5)>ol{top:-284px}
+.headerMask .mainNav>li:nth-child(6)>ol{top:-350px}
+.headerMask .mainNav>li:nth-child(7)>ol{top:-416px}
+.headerMask .mainNav>li:nth-child(8)>ol{top:-482px}
+.headerMask .mainNav a:hover{text-decoration:none}
+.headerMask .mainNav .productBlock{float:left;width:250px;height:90px;margin:10px 12px;background-color:#25303d;border-radius:2px;padding:20px 25px;line-height:20px;min-width:200px;text-decoration:none}
+.headerMask .mainNav .productBlock .ptitle{font-size:16px;color:#fff}
+.headerMask .mainNav .productBlock .pcontent{font-size:12px;color:#6f7985;margin-top:16px;line-height:17px}
+.headerMask .mainNav .productBlock:hover{background-color:#202a36}
+.headerMask .mainNav .productBlock:hover .ptitle{color:#3293ff}
+.headerMask .mainNav .productBlock:hover .pcontent{color:#fffefe}
+
+/*
+
+.newHeaderB-Wrap{height: 50px;background: #131e2a url(../Pic/header-bg.png) no-repeat;
+                    border-bottom:0;position:fixed;top:0;left:0;z-index:800}
+.slideShow {
+    position: relative;width: 100% ;height: 500px
+}
+.sp-img {
+    display: none;position: relative;height: 500px;*zoom: 1;min-width: 1200px;margin: 0 auto;background-repeat: no-repeat;background-size: auto 500px;background-position:center
+}
+*/
